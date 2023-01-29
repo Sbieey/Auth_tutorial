@@ -1,0 +1,19 @@
+GET http://localhost:3000
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDYxMjc2NzEsImV4cCI6MTY0NjEzMTI3MSwiYXVkIjoiMDU2ZGQ0YTAtOTRiOC0xMWVjLTkyOGYtMTU5YjRhYThjZjA2IiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.bjdl-DGHX7wOBq78olRFq-ly0laHeVaNGJk7re4xaGE
+}
+### Login route
+POST http://localhost:3000/auth/login
+
+### Register route
+POST http://localhost:3000/auth/register
+
+{
+    "name": "Muhammad@gmail.com",
+    "password":"spassword"
+}
+
+###rRefresh token route
+POST http://localhost:3000/auth/refresh-token
+
+###Logout route
+DELETE http://localhost:3000/auth/logout
